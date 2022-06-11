@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// 3. Дано натуральное число N. Выведите все его цифры по одной,
+//    в обратном порядке, разделяя их пробелами или новыми строками.
+
+
+void SumNum(int num)
+{
+    if (num == 0) return;
+    Console.Write($"{num % 10} ");
+    SumNum(num / 10);    
+}
+
+SumNum(453);
